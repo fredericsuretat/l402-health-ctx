@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: l402-health-ctx
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: LIGHTNING_ADDRESS
+        sync: false
+      - key: PRICE_SATS
+        value: 10
+      - key: NODE_VERSION
+        value: 20

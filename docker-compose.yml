@@ -1,0 +1,9 @@
+services:
+  l402-health-ctx:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3403:3403"
+    env_file: .env
+    environment:
+      - PORT=3403

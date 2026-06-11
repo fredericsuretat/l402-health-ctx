@@ -1,0 +1,37 @@
+{
+  "name": "l402-health-ctx",
+  "version": "1.0.0",
+  "description": "Healthcare context extraction (CDA · HL7 v2 · FHIR R4 · PDF) → structured JSON, pay-per-call in sats via L402",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "l402",
+    "lightning",
+    "bitcoin",
+    "healthcare",
+    "hl7",
+    "cda",
+    "fhir",
+    "medical",
+    "micropayments",
+    "ai-agent",
+    "interoperability",
+    "france"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@getalby/sdk": "^8.0.3",
+    "express": "^5.2.1",
+    "fast-xml-parser": "^5.8.0",
+    "l402-kit": "^1.10.1",
+    "multer": "^2.1.1",
+    "pdf-parse": "^1.1.1"
+  }
+}
